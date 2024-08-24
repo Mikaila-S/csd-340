@@ -5,22 +5,22 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: #D6A800; /* Choose your background color */
-    color: #13a213; /* Choose a font color that contrasts with background */
+    background-color: #D6A800; 
+    color: #13a213; 
     border: 1px solid #D6A800;
     padding: 10px;
 }
 
 a {
-    color: #D6A800; /* Choose a color that blends with your color scheme */
+    color: #D6A800; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #B38800; /* Choose a hover color that fits with your scheme */
+    color: #B38800;
 }
 
 a:visited {
-    color: #D6A800; /* Same as the regular link color */
+    color: #D6A800;
 }
 
