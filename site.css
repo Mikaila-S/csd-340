@@ -1,1 +1,26 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #D6A800; /* Choose your background color */
+    color: #FFFFFF; /* Choose a font color that contrasts with background */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #D6A800; /* Choose a color that blends with your color scheme */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B38800; /* Choose a hover color that fits with your scheme */
+}
+
+a:visited {
+    color: #D6A800; /* Same as the regular link color */
+}
 
