@@ -5,14 +5,14 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: #D6A800; 
-    color: #13a213; 
+    background-color: #13a213; 
+    color: #FFFFF; 
     border: 1px solid #D6A800;
     padding: 10px;
 }
 
 a {
-    color: #D6A800; 
+    color: #FFFFF; 
     text-decoration: none;
 }
 
