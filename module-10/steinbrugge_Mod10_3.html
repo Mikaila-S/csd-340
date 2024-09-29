@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+        }
+        p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <img id="image1" src="images/presant.jpg" alt="First Image" onmouseover="changeImage('image1', 'images/open_presant.jpg')" onmouseout="resetImage('image1', 'images/presant.jpg')">
+    <p>Run your mouse over the image to change.</p>
+
+    <img id="image2" src="images/DFirework.jpg" alt="Second Image" onmouseover="changeImage('image2', 'images/firework.jpg')" onmouseout="resetImage('image2', 'images/DFirework.jpg')">
+    <p>Run your mouse over the image to change. </p>
+    <p>Right-click and select View Source for more details.</p>
+
+    <script>
+        function changeImage(imageId, newSrc) {
+            document.getElementById(imageId).src = newSrc;
+        }
+
+        function resetImage(imageId, originalSrc) {
+            document.getElementById(imageId).src = originalSrc;
+        }
+    </script>
+</body>
+</html>
