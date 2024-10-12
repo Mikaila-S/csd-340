@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Steinbrugge_Mod3_3.css">
+    <script>
+        // Array of top ten favorite books
+        const topTenBooks = [
+            "Crime and Punishment",
+            "Fourth Wing",
+            "Iron Flame",
+            "House of Earth and Blood",
+            "House of Sky and Breath",
+            "House of Flame and Shadow",
+            "Ninth House",
+            "Hell Bent",
+            "Lessons in Chemistry",
+            "The Dragon Reborn"
+        ];
+
+      
+        function displayTopToBottom() {
+            const ol = document.getElementById("bookList");
+            ol.innerHTML = "";  // Clear current list
+            topTenBooks.sort().forEach(function(book) {
+                const li = document.createElement("li");
+                li.textContent = book;
+                ol.appendChild(li);
+            });
+        }
+
+        function displayBottomToTop() {
+            const ol = document.getElementById("bookList");
+            ol.innerHTML = "";  // Clear current list
+            topTenBooks.sort().reverse().forEach(function(book) {
+                const li = document.createElement("li");
+                li.textContent = book;
+                ol.appendChild(li);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div style="display: flex; justify-content: space-between;">
+           
+            <div style="width: 45%;">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="bookList">
+                    <li>Crime and Punishment</li>
+                    <li>Fourth Wing</li>
+                    <li>Iron Flame</li>
+                    <li>House of Earth and Blood</li>
+                    <li>House of Sky and Breath</li>
+                    <li>House of Flame and Shadow</li>
+                    <li>Ninth House</li>
+                    <li>Hell Bent</li>
+                    <li>Lessons in Chemistry</li>
+                    <li>The Dragon Reborn</li>
+                </ol>
+
+              
+                <h3>Sort the Book List</h3>
+                <button onclick="displayTopToBottom()">Top to Bottom</button>
+                <button onclick="displayBottomToTop()">Bottom to Top</button>
+            </div>
+            
+          
+            <div style="width: 45%;">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>Learning to structure HTML documents</li>
+                    <li>Understanding CSS selectors and properties</li>
+                    <li>Applying layout techniques with CSS</li>
+                    <li>How to create a comprehensive HTML file</li>
+                    <li>How to troubleshoot and fix HTML and CSS errors</li>
+                </ul>
+            </div>
+        </div>
+        <div style="width: 100%; margin-top: 60px;">
+            <a href="index.html" style="float: right; margin-bottom: 20px;">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
